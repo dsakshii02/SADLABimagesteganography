@@ -1,53 +1,49 @@
-# Image Steganography Project
-Project Description: 
-  This project is a Python-based Image Steganography application that allows users to embed and extract text from images using encryption. The application utilizes a graphical user interface (GUI) built with CustomTkinter.
+# Image Steganography Application
 
-The project supports the following features:
+A powerful desktop application that allows you to hide secret text messages within images using steganography and encryption techniques.
 
--Encrypting text into PNG images.
+## Features
 
--Extracting encrypted text from PNG images.
+- Hide text messages within PNG images
+- Password-protected encryption for enhanced security
+- Extract hidden messages from images
+- User-friendly graphical interface
+- Support for text file input/output
+- Secure message embedding and extraction
 
--A password-based encryption system using the cryptosteganography library.
+## Requirements
 
-Features: 
+- Python 3.x
+- customtkinter
+- cryptosteganography
 
--GUI: A user-friendly interface created with CustomTkinter.
+## Installation
 
--Encryption: Text is securely encrypted and embedded into images.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/steganography-app.git
 
--Decryption: Extract and decrypt hidden text from images using the correct password.
+Install required packages:
+pip install customtkinter cryptosteganography
 
-Prerequisites: 
+Run the application:
+python DataSteganography.py
 
-To run this project locally, you need the following installed: Python 3.x
+To hide a message:
+Enter a password
+Select an image file (PNG)
+Select a text file containing your message
+Click "Embed Text into Image"
+Choose where to save the output image
 
-Required Python libraries:
+To extract a message:
+Enter the correct password
+Select the image containing the hidden message
+Click "Extract Text from Image"
+Choose where to save the extracted text
+Security Features
+Password-based encryption
+Secure message embedding
+Error handling for incorrect passwords
+Support for PNG image format
 
--customtkinter
-
--cryptosteganography
-
--Pillow (for image handling)
-
-How to Use:
-
-Step1: Select an Image: Choose the PNG image in which you want to hide the text.
-
-Step2: Select a Text File(Skip this step if you are extracting data from an Image): Choose the text file with the message to be hidden.
-
-Step3: Embed Text(If you are extracting skip this step): Set a password and embed the text into the image.
-
-Step4: Extract Text(If you are embedding skip this step): Select an image with hidden text, provide the correct password, and extract the hidden message.
-
-Screenshots:
-
-![GUI_Screenshot](https://github.com/user-attachments/assets/adad0625-1090-4093-bf16-c784c701f29b)
-
-License
-
-This project is licensed under the Imaduddin Qazi License.
-
-Contact
-
-If you have any questions, feel free to contact me via GitHub.
